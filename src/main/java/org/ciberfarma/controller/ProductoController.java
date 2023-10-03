@@ -21,7 +21,7 @@ public class ProductoController {
 		return("listado");
 	}
 	
-	@GetMapping ("/")
+	@GetMapping ("/cargar")
 	public  String cargarPag(Model model) {
 	model.addAttribute("producto", new Producto());
 	return "crudproductos";
